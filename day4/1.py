@@ -11,7 +11,6 @@ for line in lines:
 # for each card, check if the 2nd part contains any numbers from the 1st part 
 
 sum = 0
-
 for card in cards: 
     count = 0
     winning_numbers = card[0].split(' ')

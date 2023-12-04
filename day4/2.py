@@ -9,7 +9,7 @@ for line in lines:
     cards.append(line.split(" | "))
 
 # this is an array now so we can track how many of each card we have
-# we start with only 1 of card 1 
+# we start with only 1 of EACH card
 count = [1]*len(lines)
 
 # for each card, check if the 2nd part contains any numbers from the 1st part 
