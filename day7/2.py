@@ -17,9 +17,7 @@ def comparator_key(hand):
         # add the number of jokers to the largest number in the dict 
         # in case of ties, add the joker count to the higher card's count
         # we do not modify the hand itself, because we need that for tiebreakers
-        max_freq = max(list(frequencies.values()))
-        jokers_are_this_card_now = max([card for card,freq in frequencies.items() if freq == max_freq])
-        print(jokers_are_this_card_now)
+        jokers_are_this_card_now = max([card for card,freq in frequencies.items() if freq == max(list(frequencies.values()))])
         frequencies[jokers_are_this_card_now] += num_jokers
 
     if len(frequencies) == 1:
